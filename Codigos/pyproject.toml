@@ -1,0 +1,32 @@
+[project]
+name = "proyecto-rn"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "dfg2004abbott",email = "danielsantiago.forero@abbott.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas (>=3.0.0,<4.0.0)",
+    "tensorflow (>=2.20.0,<3.0.0)",
+    "tensorflow-hub (>=0.16.1,<0.17.0)",
+    "keras (>=3.13.2,<4.0.0)",
+    "matplotlib (>=3.10.8,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "numpy (>=2.4.2,<3.0.0)",
+    "scikit-learn (>=1.8.0,<2.0.0)",
+    "opencv-python (>=4.13.0.90,<5.0.0.0)",
+    "pillow (>=12.1.0,<13.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "opencv-python-headless (>=4.13.0.90,<5.0.0.0)",
+    "setuptools (<81)",
+    "kagglehub (>=0.4.3,<0.5.0)"
+]
+
+[tool.poetry]
+packages = [{include = "proyecto_rn", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
